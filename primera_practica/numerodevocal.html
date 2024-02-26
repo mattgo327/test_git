@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var texto=prompt("Ingrese un texto");
+        var cadena=texto.length;
+        var caracter;
+        var cont=0;
+        for(i=0;i<cadena;i++){
+            caracter=texto.charAt(i);
+            if(caracter==='a' || caracter==='e' || caracter==='i' || caracter==='o' || caracter==='u'){
+                cont++;
+            }
+        }
+        document.write("La cantidad de vocales en el texto "+ texto + " es: "+ cont);
+    </script>
+</body>
+</html>

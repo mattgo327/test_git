@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function precioIva(precio, iva) {
+        if (iva == null || iva == 0) {
+          var precioiva = parseFloat(precio) * 0.21;
+          var preciofinal = parseFloat(precio) + parseFloat(precioiva);
+          document.write("El precio sin IVA es " + precio + "<br>");
+          document.write("El precio con IVA es " + preciofinal);
+        } else {
+          var precioiva = parseFloat(precio) * (iva / 100);
+          var preciofinal = parseFloat(precio) + parseFloat(precioiva);
+          document.write("El precio sin IVA es " + precio + "<br>");
+          document.write("El precio con IVA es " + preciofinal);
+        }
+      }
+
+      var precio = prompt("Ingrese el precio del producto");
+      var iva = prompt("Ingresa el IVA correspondiente");
+      var llamar = precioIva(precio, iva);
+    </script>
+  </body>
+</html>

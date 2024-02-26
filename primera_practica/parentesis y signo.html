@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var texto = prompt("Ingrese un texto con parentesis");
+      var cadena = texto.length;
+      var caracter;
+      var copia= false;
+      var res="";
+      for (i = 0; i < cadena; i++) {
+        caracter = texto.charAt(i);
+        if (caracter == ")" ) {
+          copia=false;
+        }
+        if(copia){
+            res=res+caracter;
+        }
+        if (caracter == "(" ) {
+          copia=true;
+        } 
+        
+       
+      }
+      document.write(res);
+    </script>
+  
+    </script>
+  </body>
+</html>

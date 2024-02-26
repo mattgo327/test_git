@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function randMinMax(min,max){
+            var aleatorio=Math.floor((Math.random()*(max-min))+min);
+            return aleatorio;
+        }
+
+       var min=prompt("Escriba el numero minimo");
+       var max=prompt("Escriba el numero maximo");
+       var res=randMinMax(min,max);
+       document.write("El numero aleatorio dentro del rango es: " + res);
+    </script>
+</body>
+</html>

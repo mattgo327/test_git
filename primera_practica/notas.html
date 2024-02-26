@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script>
+       do{
+    var sw=0;
+    var nota=parseFloat(prompt("Escribe una nota"));
+    if (nota >= 0 && nota <= 3) {
+        alert("Muy deficiente");
+    } else if (nota > 3 && nota <= 5) {
+        alert("Insuficiente");
+    } else if (nota > 5 && nota <= 6) {
+        alert("Suficiente");
+    } else if (nota > 6 && nota <= 7) {
+        alert("Bien");
+    } else if (nota > 7 && nota <= 9) {
+        alert("Notable");
+    } else if (nota > 9 && nota <= 10) {
+        alert("Sobresaliente");
+    } else {
+        alert("La nota ingresada no es válida");
+    }
+
+    // Aquí va el código para preguntar si el usuario quiere continuar o no.
+    var eleccion = prompt("Desea seguir continuando? [SI]/[NO]").toUpperCase();
+    while(eleccion !== "SI" && eleccion !== "NO") {
+        eleccion = prompt("Escribe SI o NO").toUpperCase();
+    }
+    if (eleccion === 'NO'){
+        sw = 1;
+    }
+}while(sw === 0); 
+    document.write("Eso es todo");
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numero=prompt("Ingrese un numero del 1 al 500");
+        var cont=0;
+        if(Number(numero)==numero){
+            if(numero>=1 && numero <= 500){
+            for(i=1;i<=numero;i++){
+                if(i%4==0){
+                    document.write(i + " es multiplo de 4");
+                }else if(i%9==0){
+                    document.write(i + " es multiplo de 9");
+                }else{
+                    document.write(i);
+                }
+                document.write("<br><br>")
+                cont=cont+1;
+                if(cont==5){
+                    document.write("----------<br><br>");
+                    cont=0;
+                }
+            }
+        }
+    }
+    </script>
+</body>
+</html>

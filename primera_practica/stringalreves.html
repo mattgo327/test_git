@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function stringAlReves(texto) {
+        var caracter = "";
+        var salida = "";
+        for (i = 0; i < texto.length; i++) {
+          caracter = texto.charAt(i);
+          salida = caracter + salida;
+          document.write(salida + "<br>")
+        }
+        return salida;
+      }
+
+      var texto = prompt("Ingrese un texto");
+      var reves = stringAlReves(texto);
+
+      document.write("Texto original: " + texto + "<br><br>");
+      document.write("Texto al reves: " + reves);
+    </script>
+  </body>
+</html>

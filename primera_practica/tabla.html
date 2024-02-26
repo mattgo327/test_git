@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var filas=prompt("Ingrese el numero de filas");
+        var columnas=prompt("Ingrese numeros de columas");
+        var res=filas*columnas;
+        do{ 
+            document.write("<table border='1'>")
+            for(i=filas;i>=1;i--){
+                document.write("<tr>")
+                for(j=columnas;j>=1;j--){
+                    document.write("<td>"+res+"</td>");
+                    res--;
+                }
+                document.write("</tr>");
+            }
+            document.write("</table");
+        }while(i*j==1)
+    </script>
+</body>
+</html>

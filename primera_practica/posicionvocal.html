@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var vocales = ["a", "e", "i", "o", "u"];
+      var texto = prompt("Introduce un texto");
+      var textomin = texto.toLowerCase();
+      var pos = 0;
+      var sw = false;
+      for (i = 0; i <= textomin.length; i++) {
+        for (j = 0; j < vocales.length; j++) {
+          if (vocales[j] == textomin.charAt(i)) {
+            pos = i;
+
+            sw = true;
+            break;
+          }
+        }
+
+        if (sw) {
+          break;
+        }
+      }
+      document.write(textomin + "<br>");
+      document.write(
+        "La primera vocal del texto se encuentra en la posicion: " +
+          pos +
+          "<br>"
+      );
+      document.write("La posicion inicial es 0, no 1 <br><br><br>");
+    </script>
+
+    <script>
+      document.write(
+        "Ahora hagamos lo mismo, pero con el metodo includes <br>"
+      );
+      var vocales = ["a", "e", "i", "o", "u"];
+      var texto = prompt("Introduce un texto");
+      var textomin = texto.toLowerCase();
+      var pos = 0;
+      for (i = 0; i <= textomin.length; i++) {
+        if (vocales.includes(textomin.charAt(i))) {
+          pos = i;
+          break;
+        }
+      }
+      document.write(textomin + "<br>");
+      document.write(
+        "La primera vocal del texto se encuentra en la posicion: " +
+          pos +
+          "<br>"
+      );
+      document.write("La posicion inicial es 0, no 1 <br><br><br>");
+    </script>
+  </body>
+</html>
